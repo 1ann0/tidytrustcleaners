@@ -3,74 +3,49 @@
 @tailwind utilities;
 @layer base {
   :root {
-    /* Core Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --primary: 206 100% 30%; /* TidyTrust Primary Blue */
+    /* TidyTrust Theme - Light */
+    --background: 210 17% 98%; /* brand.light */
+    --foreground: 210 10% 23%; /* brand.text */
+    --primary: 197 65% 44%; /* brand.blue */
     --primary-foreground: 0 0% 98%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --border: 0 0% 89.8%;
-    --ring: 206 100% 30%; /* TidyTrust Primary Blue */
+    --muted: 210 16% 93%;
+    --muted-foreground: 210 4% 45%;
+    --border: 210 14% 89%;
+    --ring: 197 65% 44%; /* brand.blue */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 210 10% 23%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --popover-foreground: 210 10% 23%;
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 210 10% 23%;
+    --accent: 93 53% 51%; /* brand.green */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --input: 0 0% 89.8%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --input: 210 14% 89%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --primary: 206 100% 70%;
-    --primary-foreground: 0 0% 9%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --border: 0 0% 14.9%;
-    --ring: 206 100% 70%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    /* TidyTrust Theme - Dark */
+    --background: 210 10% 15%;
+    --foreground: 210 17% 90%;
+    --primary: 197 65% 60%;
+    --primary-foreground: 210 10% 15%;
+    --muted: 210 10% 20%;
+    --muted-foreground: 210 17% 70%;
+    --border: 210 10% 25%;
+    --ring: 197 65% 60%;
+    --card: 210 10% 15%;
+    --card-foreground: 210 17% 90%;
+    --popover: 210 10% 15%;
+    --popover-foreground: 210 17% 90%;
+    --secondary: 210 10% 20%;
+    --secondary-foreground: 210 17% 90%;
+    --accent: 93 53% 61%;
+    --accent-foreground: 210 10% 15%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --input: 0 0% 14.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --input: 210 10% 25%;
   }
   * {
     @apply border-border;
@@ -93,18 +68,18 @@
   }
   .btn-gradient {
     @apply btn text-white shadow-primary hover:shadow-glow hover:scale-105 active:scale-95;
-    background: linear-gradient(135deg, #F38020 0%, #E55A1B 100%);
+    background: linear-gradient(135deg, #2596BE 0%, #75C143 100%);
   }
   /* Gradient System */
   .bg-gradient-primary {
-    background: linear-gradient(135deg, #F38020 0%, #E55A1B 50%, #D14615 100%);
+    background: linear-gradient(135deg, #2596BE 0%, #52b1d5 50%, #75C143 100%);
   }
   .bg-gradient-rainbow {
-    background: linear-gradient(135deg, #F38020 0%, #E55A1B 25%, #D14615 50%, #ff6b35 100%);
+    background: linear-gradient(135deg, #2596BE 0%, #75C143 25%, #F7B733 50%, #f5576c 100%);
   }
   /* Text System */
   .text-gradient {
-    background: linear-gradient(90deg, #F38020 0%, #E55A1B 50%, #D14615 100%);
+    background: linear-gradient(90deg, #2596BE 0%, #75C143 50%, #F7B733 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
