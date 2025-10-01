@@ -12,7 +12,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function HomePage() {
   return (
-    <div className="bg-white text-brand-text">
+    <div>
       <Header />
       <main>
         <Hero />
