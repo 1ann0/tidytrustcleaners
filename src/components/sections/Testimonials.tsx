@@ -24,7 +24,7 @@ const StarRating = ({ rating }: { rating: number }) => (
       <Star
         key={i}
         className={`h-5 w-5 ${
-          i < rating ? "text-brand-gold fill-brand-gold" : "text-muted/40"
+          i < rating ? "text-accent fill-accent" : "text-muted-foreground/30"
         }`}
       />
     ))}
@@ -33,7 +33,7 @@ const StarRating = ({ rating }: { rating: number }) => (
 
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-background">
+    <section id="testimonials" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,12 +58,12 @@ export const Testimonials = () => {
         >
           {TESTIMONIALS.map((testimonial, index) => (
             <motion.div key={index} variants={cardVariants}>
-              <Card className="h-full bg-card/80 border-border/80">
+              <Card className="h-full bg-card shadow-lg rounded-lg">
                 <CardContent className="p-8">
                   <div className="mb-4">
                     <StarRating rating={testimonial.rating} />
                   </div>
-                  <blockquote className="text-foreground/90 italic mb-6">
+                  <blockquote className="text-foreground/80 italic mb-6">
                     "{testimonial.quote}"
                   </blockquote>
                   <footer className="font-semibold text-foreground">

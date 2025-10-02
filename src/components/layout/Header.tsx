@@ -75,7 +75,7 @@ export const Header = () => {
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          isScrolled ? "bg-card/80 backdrop-blur-lg border-b" : "bg-transparent"
+          isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md border-b" : "bg-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +83,7 @@ export const Header = () => {
             <a href="#" className="flex items-center">
               <img src="/logo.jpg" alt="TidyTrust Cleaners logo" className="h-12 w-auto" />
             </a>
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-8 text-foreground">
               {renderNavLinks()}
             </nav>
             <div className="hidden md:block">
@@ -96,7 +96,7 @@ export const Header = () => {
             </div>
             <div className="md:hidden">
               <Button onClick={toggleMenu} variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6 text-foreground" />
               </Button>
             </div>
           </div>

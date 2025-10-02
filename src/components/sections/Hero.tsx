@@ -7,7 +7,7 @@ export const Hero = () => {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center text-center">
-      <div className="absolute inset-0 bg-brand-light/30 z-10" />
+      <div className="absolute inset-0 bg-white/30 z-10" />
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1603712725038-92f751a02989?q=80&w=2070&auto=format&fit=crop"
@@ -15,7 +15,7 @@ export const Hero = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="relative z-20 text-brand-text px-4">
+      <div className="relative z-20 text-foreground px-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="max-w-2xl mx-auto text-lg md:text-xl text-brand-text/80 mb-8"
+          className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-8"
         >
           Reliable, professional home and office cleaning services in Nairobi and across Kenya. Get your free, instant quote in 60 seconds.
         </motion.p>
