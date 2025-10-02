@@ -3,50 +3,28 @@
 @tailwind utilities;
 @layer base {
   :root {
-    /* TidyTrust Theme - Light */
-    --background: 210 17% 98%; /* brand.light */
-    --foreground: 210 10% 23%; /* brand.text */
-    --primary: 197 65% 44%; /* brand.blue */
-    --primary-foreground: 0 0% 98%;
-    --muted: 210 16% 93%;
-    --muted-foreground: 210 4% 45%;
-    --border: 210 14% 89%;
-    --ring: 197 65% 44%; /* brand.blue */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
-    --card-foreground: 210 10% 23%;
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 10% 23%;
-    --secondary: 210 16% 93%;
-    --secondary-foreground: 210 10% 23%;
-    --accent: 93 53% 51%; /* brand.green */
-    --accent-foreground: 0 0% 98%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 197 65% 44%; /* TidyTrust Blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 93 53% 51%; /* TidyTrust Green */
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --input: 210 14% 89%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
   }
-  .dark {
-    /* TidyTrust Theme - Dark */
-    --background: 210 10% 15%;
-    --foreground: 210 17% 90%;
-    --primary: 197 65% 60%;
-    --primary-foreground: 210 10% 15%;
-    --muted: 210 10% 20%;
-    --muted-foreground: 210 17% 70%;
-    --border: 210 10% 25%;
-    --ring: 197 65% 60%;
-    --card: 210 10% 15%;
-    --card-foreground: 210 17% 90%;
-    --popover: 210 10% 15%;
-    --popover-foreground: 210 17% 90%;
-    --secondary: 210 10% 20%;
-    --secondary-foreground: 210 17% 90%;
-    --accent: 93 53% 61%;
-    --accent-foreground: 210 10% 15%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --input: 210 10% 25%;
-  }
+
   * {
     @apply border-border;
   }

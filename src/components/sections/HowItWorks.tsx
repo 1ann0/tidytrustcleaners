@@ -47,7 +47,7 @@ export const HowItWorks = () => {
               className="text-center"
               variants={stepVariants}
             >
-              <div className="flex items-center justify-center h-20 w-20 mx-auto mb-6 rounded-full bg-primary text-primary-foreground border-4 border-primary/20 font-bold text-3xl">
+              <div className="flex items-center justify-center h-20 w-20 mx-auto mb-6 rounded-full bg-primary text-primary-foreground font-bold text-3xl shadow-md">
                 {step.step}
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">

@@ -20,7 +20,7 @@ const cardVariants = {
 
 export const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-24 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,10 @@ export const Services = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Our Cleaning Services
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             We offer a range of professional cleaning services to meet your needs.
           </p>
         </motion.div>
